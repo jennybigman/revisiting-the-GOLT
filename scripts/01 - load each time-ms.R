@@ -20,7 +20,7 @@
 	library(loo)
 	library(magick)
 	library(MASS)
-	#library(MCMCglmm)
+	library(MCMCglmm)
 	library(patchwork)
 	library(phangorn)
 	library(phytools)
@@ -134,36 +134,6 @@
 	setdiff(RawGSA8_phylo$phylo, tree_pruned$tip.label)
 	setdiff(tree_pruned$tip.label, RawGSA8_phylo$phylo)
 	
-	## create an object for later use in filtering out species that are traditionally used in
-	# aquaculture and those that are air-breathers
-
-	aquaculture_sp_mean <- c("Ameiurus nebulosus",
-	                          "Channa punctata",
-	                          "Channa striata",
-	                          "Cirrhinus mrigala",
-	                          "Clarias batrachus",
-	                          "Ctenopharyngodon idella",
-	                          "Oncorhynchus mykiss",
-	                          "Oreochromis niloticus",
-	                          "Salmo trutta",
-	                          "Tinca tinca")
-
-	# species capable of air-breathing
-	airbreathing_mean <- c("Anabas testudineus",
-	                       "Anguilla anguilla",
-	                       "Anguilla rostrata",
-	                       "Boleophthalmus boddarti",
-	                       "Channa punctata",
-	                       "Channa striata",
-	                       "Clarias batrachus",
-	                       "Cobitis taenia",
-	                       "Heteropneustes fossilis",
-	                       "Lipophrys pholis",
-	                       "Misgurnus fossilis",
-	                       "Periophthalmus barbarus",
-	                       "Periophthalmus chrysospilos",
-	                       "Taurulus bubalis",
-	                       "Zoarces viviparus")
 	
 	### Pauly's data
 	Pauly_dat <- read.csv(here("data/Pauly_GAI_data.csv"), header = TRUE,
