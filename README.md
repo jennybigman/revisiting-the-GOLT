@@ -1,2 +1,4 @@
 # revisiting-the-GOLT
-repo to house code from Bigman et al in review Revisiting the basis of the Gill Oxygen Limitation Theory
+repo to house code from 
+
+Bigman et al in press: Revisiting a central prediction of Gill Oxygen Limitation Theory: Gill area index and growth performance. Fish and Fisheries.
